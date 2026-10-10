@@ -1,0 +1,13 @@
+node_modules/
+# dist/ is committed on purpose: the server pulls the build, it does not compile it.
+.env
+.env.*
+!.env.example
+*.token
+*.pem
+*.key
+*.log
+
+# Kept on the team's machines only, not in the repository or on the server
+info/
+team/

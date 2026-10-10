@@ -1,0 +1,487 @@
+{
+  "scenario": "SC4",
+  "site": "ekan-athens",
+  "run": "sc4-1791154762922",
+  "broker": {
+    "url": "https://ibot4crms-middleware.enakronic.eu/api/v1",
+    "fiwareService": "sc4",
+    "fiwareServicePath": "/picvisa"
+  },
+  "readAt": "2026-10-04T22:59:24.749Z",
+  "model": {
+    "id": "tc-weee-vision",
+    "version": "0.1.0-placeholder",
+    "provenance": "placeholder",
+    "mlModelEntity": "MLModel:tc-weee-vision-0.1.0-placeholder"
+  },
+  "validatedRange": {
+    "inRange": false,
+    "steps": 96,
+    "outOfRangeSteps": 96,
+    "units": [
+      {
+        "unitId": "sc4-S7",
+        "steps": 96,
+        "reason": "target share 2.1 a% below 5"
+      }
+    ],
+    "unboundedDrivers": [
+      "ejectSharePct"
+    ]
+  },
+  "entities": [
+    {
+      "id": "ManufacturingMachineOperation:sc4-1791154762922-pcb",
+      "type": "ManufacturingMachineOperation",
+      "cycleTime": {
+        "type": "Number",
+        "value": 28800,
+        "metadata": {
+          "unitCode": {
+            "type": "Text",
+            "value": "SEC"
+          },
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "dataProvenance": {
+        "type": "Text",
+        "value": "simulated",
+        "metadata": {
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "ibotInValidatedRange": {
+        "type": "Boolean",
+        "value": false,
+        "metadata": {
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "ibotOutOfRangeReason": {
+        "type": "Text",
+        "value": "sc4-S7: target share 2.1 a% below 5",
+        "metadata": {
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "ibotRefMLModel": {
+        "type": "Relationship",
+        "value": "MLModel:tc-weee-vision-0.1.0-placeholder"
+      },
+      "ibotScenario": {
+        "type": "Text",
+        "value": "SC4",
+        "metadata": {
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "material": {
+        "type": "Text",
+        "value": "pcb",
+        "metadata": {
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "modelId": {
+        "type": "Text",
+        "value": "tc-weee-vision",
+        "metadata": {
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "modelProvenance": {
+        "type": "Text",
+        "value": "placeholder",
+        "metadata": {
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "modelVersion": {
+        "type": "Text",
+        "value": "0.1.0-placeholder",
+        "metadata": {
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "operationOutput": {
+        "type": "StructuredValue",
+        "value": {
+          "recoveryRate": 99.1,
+          "purity": 95.93,
+          "cycleTime": 28800
+        },
+        "metadata": {
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "owner": [
+        "cyclefi"
+      ],
+      "purity": {
+        "type": "Number",
+        "value": 95.93,
+        "metadata": {
+          "unitCode": {
+            "type": "Text",
+            "value": "P1"
+          },
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "recoveryRate": {
+        "type": "Number",
+        "value": 99.1,
+        "metadata": {
+          "unitCode": {
+            "type": "Text",
+            "value": "P1"
+          },
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "refSite": {
+        "type": "Relationship",
+        "value": "ManufacturingMachine:ekan-athens"
+      }
+    },
+    {
+      "id": "ManufacturingMachineOperation:sc4-1791154762922-cu",
+      "type": "ManufacturingMachineOperation",
+      "cycleTime": {
+        "type": "Number",
+        "value": 28800,
+        "metadata": {
+          "unitCode": {
+            "type": "Text",
+            "value": "SEC"
+          },
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "dataProvenance": {
+        "type": "Text",
+        "value": "simulated",
+        "metadata": {
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "ibotInValidatedRange": {
+        "type": "Boolean",
+        "value": false,
+        "metadata": {
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "ibotOutOfRangeReason": {
+        "type": "Text",
+        "value": "sc4-S7: target share 2.1 a% below 5",
+        "metadata": {
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "ibotRefMLModel": {
+        "type": "Relationship",
+        "value": "MLModel:tc-weee-vision-0.1.0-placeholder"
+      },
+      "ibotScenario": {
+        "type": "Text",
+        "value": "SC4",
+        "metadata": {
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "material": {
+        "type": "Text",
+        "value": "cu",
+        "metadata": {
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "modelId": {
+        "type": "Text",
+        "value": "tc-weee-vision",
+        "metadata": {
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "modelProvenance": {
+        "type": "Text",
+        "value": "placeholder",
+        "metadata": {
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "modelVersion": {
+        "type": "Text",
+        "value": "0.1.0-placeholder",
+        "metadata": {
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "operationOutput": {
+        "type": "StructuredValue",
+        "value": {
+          "recoveryRate": 84.92,
+          "purity": 92.97,
+          "cycleTime": 28800
+        },
+        "metadata": {
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "owner": [
+        "cyclefi"
+      ],
+      "purity": {
+        "type": "Number",
+        "value": 92.97,
+        "metadata": {
+          "unitCode": {
+            "type": "Text",
+            "value": "P1"
+          },
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "recoveryRate": {
+        "type": "Number",
+        "value": 84.92,
+        "metadata": {
+          "unitCode": {
+            "type": "Text",
+            "value": "P1"
+          },
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "refSite": {
+        "type": "Relationship",
+        "value": "ManufacturingMachine:ekan-athens"
+      }
+    },
+    {
+      "id": "ManufacturingMachineOperation:sc4-1791154762922-al",
+      "type": "ManufacturingMachineOperation",
+      "cycleTime": {
+        "type": "Number",
+        "value": 28800,
+        "metadata": {
+          "unitCode": {
+            "type": "Text",
+            "value": "SEC"
+          },
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "dataProvenance": {
+        "type": "Text",
+        "value": "simulated",
+        "metadata": {
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "ibotInValidatedRange": {
+        "type": "Boolean",
+        "value": false,
+        "metadata": {
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "ibotOutOfRangeReason": {
+        "type": "Text",
+        "value": "sc4-S7: target share 2.1 a% below 5",
+        "metadata": {
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "ibotRefMLModel": {
+        "type": "Relationship",
+        "value": "MLModel:tc-weee-vision-0.1.0-placeholder"
+      },
+      "ibotScenario": {
+        "type": "Text",
+        "value": "SC4",
+        "metadata": {
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "material": {
+        "type": "Text",
+        "value": "al",
+        "metadata": {
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "modelId": {
+        "type": "Text",
+        "value": "tc-weee-vision",
+        "metadata": {
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "modelProvenance": {
+        "type": "Text",
+        "value": "placeholder",
+        "metadata": {
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "modelVersion": {
+        "type": "Text",
+        "value": "0.1.0-placeholder",
+        "metadata": {
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "operationOutput": {
+        "type": "StructuredValue",
+        "value": {
+          "recoveryRate": 77.92,
+          "purity": 95.43,
+          "cycleTime": 28800
+        },
+        "metadata": {
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "owner": [
+        "cyclefi"
+      ],
+      "purity": {
+        "type": "Number",
+        "value": 95.43,
+        "metadata": {
+          "unitCode": {
+            "type": "Text",
+            "value": "P1"
+          },
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "recoveryRate": {
+        "type": "Number",
+        "value": 77.92,
+        "metadata": {
+          "unitCode": {
+            "type": "Text",
+            "value": "P1"
+          },
+          "dataSource": {
+            "type": "Text",
+            "value": "simulated"
+          }
+        }
+      },
+      "refSite": {
+        "type": "Relationship",
+        "value": "ManufacturingMachine:ekan-athens"
+      }
+    }
+  ]
+}

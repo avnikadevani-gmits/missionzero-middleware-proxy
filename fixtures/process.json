@@ -1,0 +1,19 @@
+{
+ "entityId": "GenericProcess:cyclefi-digital-twin",
+ "entityType": "GenericProcess",
+ "owner": [
+  "cyclefi"
+ ],
+ "lastRun": {
+  "type": "Text",
+  "value": "sc4-1791154762922"
+ },
+ "lastRunAt": {
+  "type": "DateTime",
+  "value": "2026-10-04T22:59:22Z"
+ },
+ "dataSource": {
+  "type": "Text",
+  "value": "simulated"
+ }
+}
